@@ -20,4 +20,11 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Airline bar
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
+    " Dev Icons
+    Plug 'ryanoasis/vim-devicons'
+    " Fuzzy Finder
+    Plug 'junegunn/fzf', {'dir': '~/.fzf', 'do': './install --all'} 
+    Plug 'junegunn/fzf.vim'
+    " Easier comments
+    Plug 'tpope/vim-commentary'    
 call plug#end()

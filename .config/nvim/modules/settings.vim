@@ -1,5 +1,5 @@
 " Set leader key
-let g:mapleader = "/<Space>"
+let g:mapleader = "\<Space>"
 
 syntax enable     					" Enable syntax highlight
 set number									" Show line numbers
@@ -26,3 +26,5 @@ set nowritebackup						" Recommended by Coc
 set shortmess+=c						" Dont five /in-completion-menu/ messages
 set signcolumn=yes					" Always show signcolumns
 set noswapfile							" Do not use swap files
+set splitbelow							" Split horizontal window to below
+set splitright							" Split vertical window to right
