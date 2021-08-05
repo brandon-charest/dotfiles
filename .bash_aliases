@@ -1,7 +1,7 @@
 # listings
-alias ll='ls -alF'
-alias la='ls --group-directories-first -A -v'
-alias l='ls -CF'
+alias ll='ls --color=always -alF'
+alias la='ls --color=always --group-directories-first -A -v'
+alias l='ls color=always -CF'
 
 # ask before changing a file
 alias cp='cp -i'
@@ -45,4 +45,4 @@ alias psmem10='ps auxf | sort -nr -k 4 | head -10'
 
 # Get highest CPU consuming processes
 alias pscpu='ps auxf | sort -nr -k 3'
-alias pscpu10='ps auxf | sort -nr -k 3 } head -10'
+alias pscpu10='ps auxf | sort -nr -k 3 | head -10'
