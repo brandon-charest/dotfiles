@@ -188,3 +188,4 @@
        (default
          +bindings
          +smartparens))
+
