@@ -46,3 +46,5 @@ alias psmem10='ps auxf | sort -nr -k 4 | head -10'
 # Get highest CPU consuming processes
 alias pscpu='ps auxf | sort -nr -k 3'
 alias pscpu10='ps auxf | sort -nr -k 3 | head -10'
+
+alias obsidian='~/Obsidian/Obsidian-0.12.12.AppImage'
