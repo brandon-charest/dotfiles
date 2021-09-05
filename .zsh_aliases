@@ -1,0 +1,31 @@
+# Update and upgrade
+alias aptup='sudo apt update && sudo apt upgrade'
+
+# Alias for git dotfiles repo
+alias config='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
+
+# Ask before changing a file
+alias cp='cp -i'
+alias rm='rm -i'
+alias mv='mv -i'
+
+# Doom emacs
+alias doom='~/.emacs.d/bin/doom run'
+alias doomsync='~/.emacs.d/bin/doom sync'
+alias doomupgrade='~/.emacs.d/bin/doom upgrade'
+
+# Git
+alias addall='git add .'
+alias commit='git commit -m'
+alias fetch='git fetch'
+alias pull='git pull origin'
+alias push='git push origin'
+alias status='git status'
+
+# Get highest memory consuming processes
+alias psmem='ps auxf | sort -nr -k 4'
+alias psmem10='ps auxf | sort -nr -k 4 | head -10'
+
+# Get highest CPU consuming processes
+alias pscpu='ps auxf | sort -nr -k 3'
+alias pscpu10='ps auxf | sort -nr -k 3 | head -10'
