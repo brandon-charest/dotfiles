@@ -2,16 +2,19 @@
 alias aptup='sudo apt update && sudo apt upgrade'
 
 # Alias for git dotfiles repo
-alias config='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
+alias config='/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME'
 
 # Ask before changing a file
 alias cp='cp -i'
 alias rm='rm -i'
 alias mv='mv -i'
 
-# ls -> exa
-alias la='exa -a --group-directories-first --sort name'
-alias lt='exa -aT --group-directories-first'
+# Edit zshrc
+alias ezsh='nvim ~/.zshrc'
+
+# ls 
+alias la='ls -a --group-directories-first'
+alias lt='ls -aT --group-directories-first'
 
 # Doom emacs
 alias doom='~/.emacs.d/bin/doom run'
