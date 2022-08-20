@@ -54,11 +54,18 @@ return packer.startup(function(use)
   use "windwp/nvim-autopairs"       -- autopair, intergrates with cmp and treesitter 
   use "numToStr/Comment.nvim"       -- easy commenting
   use {
-    "kyazdani42/nvim-tree.lua",
+    "kyazdani42/nvim-tree.lua",     -- Nvim Tree
     requires = {
       'kyazdani42/nvim-web-devicons'
     },
     tag = 'nightly'
+  }
+  use {
+    "akinsho/bufferline.nvim",      -- Bufferline
+    requires = {
+      'kyazdani42/nvim-web-devicons'
+    },
+    tag = "v2.*",
   }
 
   -- Colorschemes
@@ -80,6 +87,7 @@ return packer.startup(function(use)
   use "neovim/nvim-lspconfig"           -- enable LSP
   use "williamboman/nvim-lsp-installer" -- simple to use language server installer
   use "tamago324/nlsp-settings.nvim"    -- language server settings defined in json for
+  use "jose-elias-alvarez/null-ls.nvim" -- for formatters and linters
 
   -- Telescope
   use "nvim-telescope/telescope.nvim"
