@@ -53,6 +53,13 @@ return packer.startup(function(use)
   use "nvim-lualine/lualine.nvim"   -- status line
   use "windwp/nvim-autopairs"       -- autopair, intergrates with cmp and treesitter 
   use "numToStr/Comment.nvim"       -- easy commenting
+  use {
+    "kyazdani42/nvim-tree.lua",
+    requires = {
+      'kyazdani42/nvim-web-devicons'
+    },
+    tag = 'nightly'
+  }
 
   -- Colorschemes
   use "gruvbox-community/gruvbox"
