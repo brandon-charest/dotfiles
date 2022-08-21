@@ -40,53 +40,56 @@ packer.init {
 
 -- Install your plugins here
 return packer.startup(function(use)
-  -- Package manager 
-  use "wbthomason/packer.nvim"      -- The packer manage itself
+  -- Package manager
+  use "wbthomason/packer.nvim" -- The packer manage itself
 
   -- Needs to load first
-  use "nvim-lua/popup.nvim"         -- An implementation of the Popup API from vim in Neovim
-  use "nvim-lua/plenary.nvim"       -- Useful lua functions used ny lots of plugins
+  use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
+  use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
   use { 'kyazdani42/nvim-web-devicons' } -- Dev icons
 
   -- General Plugins
-  use "p00f/nvim-ts-rainbow"        -- rainbow brackets
-  use "nvim-lualine/lualine.nvim"   -- status line
-  use "windwp/nvim-autopairs"       -- autopair, intergrates with cmp and treesitter 
-  use "numToStr/Comment.nvim"       -- easy commenting
+  use "p00f/nvim-ts-rainbow" -- rainbow brackets
+  use "nvim-lualine/lualine.nvim" -- status line
+  use "windwp/nvim-autopairs" -- autopair, intergrates with cmp and treesitter
+  use "numToStr/Comment.nvim" -- easy commenting
   use {
-    "kyazdani42/nvim-tree.lua",     -- Nvim Tree
+    "kyazdani42/nvim-tree.lua", -- Nvim Tree
     requires = {
       'kyazdani42/nvim-web-devicons'
     },
     tag = 'nightly'
   }
   use {
-    "akinsho/bufferline.nvim",      -- Bufferline
+    "akinsho/bufferline.nvim", -- Bufferline
     requires = {
       'kyazdani42/nvim-web-devicons'
     },
     tag = "v2.*",
   }
-
+  use {
+    "akinsho/toggleterm.nvim",
+    tag = "v2.*",
+  }
   -- Colorschemes
   use "gruvbox-community/gruvbox"
 
   -- cmp plugins
-  use "hrsh7th/nvim-cmp"            -- The completion plugin
-  use "hrsh7th/cmp-buffer"          -- buffer completions
-  use "hrsh7th/cmp-path"            -- path completions
-  use "hrsh7th/cmp-cmdline"         -- cmdline completions
-  use "saadparwaiz1/cmp_luasnip"    -- snippet completions
+  use "hrsh7th/nvim-cmp" -- The completion plugin
+  use "hrsh7th/cmp-buffer" -- buffer completions
+  use "hrsh7th/cmp-path" -- path completions
+  use "hrsh7th/cmp-cmdline" -- cmdline completions
+  use "saadparwaiz1/cmp_luasnip" -- snippet completions
   use "hrsh7th/cmp-nvim-lsp"
 
   -- Snippets
-  use "L3MON4D3/LuaSnip"            --snippet engine
-  use "rafamadriz/friendly-snippets"-- a bunch of snippets to use
+  use "L3MON4D3/LuaSnip" --snippet engine
+  use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
 
   -- LSP
-  use "neovim/nvim-lspconfig"           -- enable LSP
+  use "neovim/nvim-lspconfig" -- enable LSP
   use "williamboman/nvim-lsp-installer" -- simple to use language server installer
-  use "tamago324/nlsp-settings.nvim"    -- language server settings defined in json for
+  use "tamago324/nlsp-settings.nvim" -- language server settings defined in json for
   use "jose-elias-alvarez/null-ls.nvim" -- for formatters and linters
 
   -- Telescope
