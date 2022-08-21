@@ -71,6 +71,11 @@ return packer.startup(function(use)
     "akinsho/toggleterm.nvim",
     tag = "v2.*",
   }
+  use "ahmedkhalf/project.nvim"
+  use "lewis6991/impatient.nvim"
+  use "lukas-reineke/indent-blankline.nvim"
+
+
   -- Colorschemes
   use "gruvbox-community/gruvbox"
 
