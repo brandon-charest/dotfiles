@@ -6,11 +6,16 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 # If you come from bash you might have to change your $PATH.
-export PATH="/home/brandon/.local/bin:$PATH"
+export GOROOT="/usr/local/go"
+export GOPATH=$HOME/go
+export JAVA_HOME="/usr/lib/jvm/java-17-openjdk-amd64"
+export PATH="/home/brandon/.local/bin:$GOPATH/bin:$GOROOT/bin:$JAVA_HOME:$PATH"
+export GO111MODULE=on
+
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/brandon/.oh-my-zsh"
 
+export ZSH="/home/brandon/.oh-my-zsh"
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
