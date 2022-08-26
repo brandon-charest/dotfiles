@@ -82,3 +82,7 @@ keymap("n", "<A-f>", ":Format<cr>", opts)
 -- Bufferline
 keymap("n", "<leader>bc", ":bd<cr>", opts) -- close buffer, unless file has been changed
 keymap("n", "<leader>bC", ":bd!<cr>", opts) -- close buffer no matter what
+
+-- Save
+keymap("n", "<C-s>", ":w<cr>", opts)
+
