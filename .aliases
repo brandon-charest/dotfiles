@@ -30,6 +30,13 @@ alias push='git push origin'
 alias status='git status'
 alias branch='git branch'
 
+# Git dotfiles bare 
+alias cs='config status'
+alias ca='config add -u'
+alias cc='config commit -m'
+alias cu='config push origin master'
+
+
 # Get highest memory consuming processes
 alias psmem='ps auxf | sort -nr -k 4'
 alias psmem10='ps auxf | sort -nr -k 4 | head -10'
