@@ -68,21 +68,20 @@ keymap("t", "<C-k>", "<C-\\><C-N><C-w>k", term_opts)
 keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
 
 -- Telescope
-keymap("n", "<leader>f",
-  "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false }))<cr>",
-  opts)
-keymap("n", "<c-t>", "<cmd>Telescope live_grep<cr>", opts)
+-- keymap("n", "<leader>f",
+--   "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false }))<cr>",
+--   opts)
+-- keymap("n", "<c-t>", "<cmd>Telescope live_grep<cr>", opts)
 
 -- NvimTree
-keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
+-- keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
 
 -- Format
 keymap("n", "<A-f>", ":Format<cr>", opts)
 
 -- Bufferline
-keymap("n", "<leader>bc", ":bd<cr>", opts) -- close buffer, unless file has been changed
-keymap("n", "<leader>bC", ":bd!<cr>", opts) -- close buffer no matter what
+-- keymap("n", "<leader>bc", ":bd<cr>", opts) -- close buffer, unless file has been changed
+-- keymap("n", "<leader>bC", ":bd!<cr>", opts) -- close buffer no matter what
 
 -- Save
 keymap("n", "<C-s>", ":w<cr>", opts)
-

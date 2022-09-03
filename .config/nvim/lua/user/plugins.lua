@@ -76,6 +76,7 @@ return packer.startup(function(use)
   use "lukas-reineke/indent-blankline.nvim"
   use "mfussenegger/nvim-jdtls" -- Java
   use "rcarriga/nvim-notify" -- notification bar
+  use "folke/which-key.nvim"
 
   -- Colorschemes
   use "gruvbox-community/gruvbox"
@@ -100,6 +101,7 @@ return packer.startup(function(use)
 
   -- Telescope
   use "nvim-telescope/telescope.nvim"
+  use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
 
   -- Treesitter
   use {
@@ -107,7 +109,6 @@ return packer.startup(function(use)
     run = ":TSUpdate",
   }
   use 'JoosepAlviste/nvim-ts-context-commentstring'
-  use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
 
   -- Git
   use "lewis6991/gitsigns.nvim"
