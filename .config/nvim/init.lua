@@ -1,3 +1,4 @@
+require "user.alpha"
 require "user.autopairs"
 require "user.bufferline"
 require "user.cmp"

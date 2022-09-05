@@ -76,7 +76,12 @@ return packer.startup(function(use)
   use "lukas-reineke/indent-blankline.nvim"
   use "mfussenegger/nvim-jdtls" -- Java
   use "rcarriga/nvim-notify" -- notification bar
-  use "folke/which-key.nvim"
+  use "folke/which-key.nvim" -- key finder
+  use {
+    "goolord/alpha-nvim", -- dashboard
+    requires = { 'kyazdani42/nvim-web-devicons' }
+  }
+  use "antoinemadec/FixCursorHold.nvim" -- This is needed to fix lsp doc highlight
 
   -- Colorschemes
   use "gruvbox-community/gruvbox"
@@ -102,7 +107,7 @@ return packer.startup(function(use)
 
   -- Telescope
   use "nvim-telescope/telescope.nvim"
-  use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
+  use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
 
   -- Treesitter
   use {
