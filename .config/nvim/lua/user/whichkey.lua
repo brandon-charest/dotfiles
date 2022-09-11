@@ -89,7 +89,7 @@ local vopts = {
 local mappings = {
   a = { "<cmd>lua vim.lsp.buf.code_action()<cr>", "Action" },
   b = { "<cmd>Telescope buffers<cr>", "Buffers" },
-  c = { "<cmd>Bdelete!<CR>", "Close Buffer" },
+  c = { "<cmd>bdelete!<CR>", "Close Buffer" },
   e = { "<cmd>NvimTreeToggle<cr>", "Explorer" },
   v = { "<cmd>vsplit<cr>", "vsplit" },
   h = { "<cmd>split<cr>", "split" },
@@ -227,6 +227,13 @@ local mappings = {
   T = {
     name = "Treesitter",
     h = { "<cmd>TSHighlightCapturesUnderCursor<cr>", "Highlight" },
+    p = { "<cmd>TSPlaygroundToggle<cr>", "Playground" },
+    r = { "<cmd>TSToggle rainbow<cr>", "Rainbow" },
+  },
+
+  r = {
+    name = "R Language",
+    h = { "<cmd>RStart<cr>", "Highlight" },
     p = { "<cmd>TSPlaygroundToggle<cr>", "Playground" },
     r = { "<cmd>TSToggle rainbow<cr>", "Rainbow" },
   },

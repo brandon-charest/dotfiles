@@ -72,9 +72,8 @@ return packer.startup(function(use)
     tag = "v2.*",
   }
   use "ahmedkhalf/project.nvim"
-  use "lewis6991/impatient.nvim"
+  use "lewis6991/impatient.nvim" -- adds cache for speed
   use "lukas-reineke/indent-blankline.nvim"
-  use "mfussenegger/nvim-jdtls" -- Java
   use "rcarriga/nvim-notify" -- notification bar
   use "folke/which-key.nvim" -- key finder
   use {
@@ -82,6 +81,14 @@ return packer.startup(function(use)
     requires = { 'kyazdani42/nvim-web-devicons' }
   }
   use "antoinemadec/FixCursorHold.nvim" -- This is needed to fix lsp doc highlight
+
+  -- Languages
+  use "jalvesaq/Nvim-R" -- R language
+  use "mfussenegger/nvim-jdtls" -- Java
+  use {
+    "fatih/vim-go", -- Go
+    run = ":GoUpdateBinaries",
+  }
 
   -- Colorschemes
   use "gruvbox-community/gruvbox"
