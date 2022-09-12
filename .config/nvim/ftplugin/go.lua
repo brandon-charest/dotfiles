@@ -40,4 +40,4 @@ vim.notify = function(msg, ...)
   notify_filter(msg, ...)
 end
 
-vim.api.nvim_set_keymap("n", "<m-d>", "<cmd>RustOpenExternalDocs<Cr>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<m-d>", "<cmd>GoDocBrowser<Cr>", { noremap = true, silent = true })
