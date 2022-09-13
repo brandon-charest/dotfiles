@@ -67,6 +67,7 @@ return packer.startup(function(use)
     },
     tag = "v2.*",
   }
+  use {"famiu/bufdelete.nvim"} -- better bdelete
   use {
     "akinsho/toggleterm.nvim",
     tag = "v2.*",
