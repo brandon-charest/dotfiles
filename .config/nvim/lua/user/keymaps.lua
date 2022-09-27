@@ -28,8 +28,8 @@ keymap("n", "<C-l>", "<C-w>l", opts)
 -- Resize with arrows
 keymap("n", "<C-Up>", ":resize -2<CR>", opts)
 keymap("n", "<C-Down>", ":resize +2<CR>", opts)
-keymap("n", "<C-Left>", ":vertical resize -2<CR>", opts)
-keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
+keymap("n", "<C-Left>", ":vertical resize +2<CR>", opts)
+keymap("n", "<C-Right>", ":vertical resize -2<CR>", opts)
 
 -- Navigate buffers
 keymap("n", "<S-l>", ":bnext<CR>", opts)
@@ -39,9 +39,18 @@ keymap("n", "<S-h>", ":bprevious<CR>", opts)
 keymap("n", "<A-j>", "<Esc>:m .+1<CR>==gi", opts)
 keymap("n", "<A-k>", "<Esc>:m .-2<CR>==gi", opts)
 
+-- Format
+keymap("n", "<A-f>", ":Format<cr>", opts)
+
+-- Save
+keymap("n", "<C-s>", ":w<cr>", opts)
+
 -- Insert --
 -- Press jk fast to enter
 keymap("i", "jk", "<ESC>", opts)
+
+-- because I cannot seem to learn to exit insert mode before saving
+keymap("i", "<C-s>", "<esc>:w<cr>", opts)
 
 -- Visual --
 -- Stay in indent mode
@@ -66,22 +75,3 @@ keymap("t", "<C-h>", "<C-\\><C-N><C-w>h", term_opts)
 keymap("t", "<C-j>", "<C-\\><C-N><C-w>j", term_opts)
 keymap("t", "<C-k>", "<C-\\><C-N><C-w>k", term_opts)
 keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
-
--- Telescope
--- keymap("n", "<leader>f",
---   "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false }))<cr>",
---   opts)
--- keymap("n", "<c-t>", "<cmd>Telescope live_grep<cr>", opts)
-
--- NvimTree
--- keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
-
--- Format
-keymap("n", "<A-f>", ":Format<cr>", opts)
-
--- Bufferline
--- keymap("n", "<leader>bc", ":bd<cr>", opts) -- close buffer, unless file has been changed
--- keymap("n", "<leader>bC", ":bd!<cr>", opts) -- close buffer no matter what
-
--- Save
-keymap("n", "<C-s>", ":w<cr>", opts)
