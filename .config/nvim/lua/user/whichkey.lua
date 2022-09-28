@@ -173,9 +173,9 @@ local mappings = {
     f = { "<cmd>lua vim.lsp.buf.format({ async = true })<cr>", "Format" },
     F = { "<cmd>LspToggleAutoFormat<cr>", "Toggle Autoformat" },
     i = { "<cmd>LspInfo<cr>", "Info" },
+    I = { "<cmd>Mason<cr>", "Mason Info" },
     h = { "<cmd>lua require('lsp-inlayhints').toggle()<cr>", "Toggle Hints" },
     H = { "<cmd>IlluminationToggle<cr>", "Toggle Doc HL" },
-    I = { "<cmd>LspInstallInfo<cr>", "Installer Info" },
     j = {
       "<cmd>lua vim.diagnostic.goto_next({buffer=0})<CR>",
       "Next Diagnostic",
