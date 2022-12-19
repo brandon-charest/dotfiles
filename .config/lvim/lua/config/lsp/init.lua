@@ -1,8 +1,7 @@
-require "user.lsp.languages.go"
-require "user.lsp.languages.python"
--- require "user.lsp.languages.js-ts"
-require "user.lsp.languages.sh"
-
+require "config.lsp.languages.go"
+require "config.lsp.languages.python"
+-- require "config.lsp.languages.js-ts"
+require "config.lsp.languages.sh"
 lvim.lsp.diagnostics.virtual_text = true
 
 vim.list_extend(lvim.lsp.automatic_configuration.skipped_servers, { "jdtls" })
@@ -30,3 +29,4 @@ formatters.setup {
 
 -- ---@usage disable automatic installation of servers
 -- lvim.lsp.installer.setup.automatic_installation = false
+print("lsp end")

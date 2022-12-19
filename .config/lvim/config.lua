@@ -1,21 +1,10 @@
-reload "config.keymaps"
-reload "config.lsp"
-reload "config.options"
-reload "config.plugins"
-reload "config.telescope"
-reload "config.treesitter"
-
--- Use which-key to add extra bindings with the leader-key prefix
--- lvim.builtin.which_key.mappings["P"] = { "<cmd>Telescope projects<CR>", "Projects" }
--- lvim.builtin.which_key.mappings["t"] = {
---   name = "+Trouble",
---   r = { "<cmd>Trouble lsp_references<cr>", "References" },
---   f = { "<cmd>Trouble lsp_definitions<cr>", "Definitions" },
---   d = { "<cmd>Trouble document_diagnostics<cr>", "Diagnostics" },
---   q = { "<cmd>Trouble quickfix<cr>", "QuickFix" },
---   l = { "<cmd>Trouble loclist<cr>", "LocationList" },
---   w = { "<cmd>Trouble workspace_diagnostics<cr>", "Workspace Diagnostics" },
--- }
+require "config.keymaps"
+require "config.lsp"
+require "config.options"
+require "config.plugins"
+require "config.telescope"
+require "config.treesitter"
+require "config.which-key"
 
 
 vim.api.nvim_create_autocmd("FileType", {
