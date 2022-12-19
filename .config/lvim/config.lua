@@ -1,9 +1,9 @@
-reload "user.keymaps"
-reload "user.lsp"
-reload "user.options"
-reload "user.plugins"
-reload "user.telescope"
-reload "user.treesitter"
+reload "config.keymaps"
+reload "config.lsp"
+reload "config.options"
+reload "config.plugins"
+reload "config.telescope"
+reload "config.treesitter"
 
 -- Use which-key to add extra bindings with the leader-key prefix
 -- lvim.builtin.which_key.mappings["P"] = { "<cmd>Telescope projects<CR>", "Projects" }
