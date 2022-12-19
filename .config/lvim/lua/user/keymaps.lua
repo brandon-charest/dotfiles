@@ -11,6 +11,12 @@ keymap("n", "<C-u>", "<C-u>zz", opts)
 keymap("n", "<C-d>", "<C-d>zz", opts)
 keymap("n", "<C-s>", ":w<cr>", opts)
 keymap("n", "<C-s>", ":w<cr>", opts)
+-- Resize with arrows
+keymap("n", "<C-Up>", ":resize -2<CR>", opts)
+keymap("n", "<C-Down>", ":resize +2<CR>", opts)
+keymap("n", "<C-Left>", ":vertical resize -2<CR>", opts)
+keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
+
 
 -- Insert Mode
 -- because I clearly cannot learn to exit insert before saving
@@ -20,6 +26,9 @@ keymap("i", "kj", "<esc>", opts)
 
 -- Visual Mode
 keymap("v", "p", '"_dP', opts)
+-- Stay in indent mode
+keymap("v", "<", "<gv", opts)
+keymap("v", ">", ">gv", opts)
 
 -- Terminal --
 -- Better terminal navigation
