@@ -22,12 +22,20 @@ lvim.plugins = {
     "p00f/nvim-ts-rainbow",
     "tpope/vim-repeat",
     "tpope/vim-surround",
+  -------------------------
+  -- Languages
+  -------------------------
     "mfussenegger/nvim-jdtls", -- Java 
     {
       "fatih/vim-go", -- Go
       run = ":GoUpdateBinaries",
     },
+    "olexsmir/gopher.nvim",
+    "leoluz/nvim-dap-go",
+    "mfussenegger/nvim-dap-python",
+  ------------------------
   -- Colorschemes
+  ------------------------
     "gruvbox-community/gruvbox", 
     "sainnhe/gruvbox-material",
 }
