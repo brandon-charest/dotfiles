@@ -1,3 +1,4 @@
+require "config.colorizer"
 require "config.keymaps"
 require "config.lsp"
 require "config.options"
