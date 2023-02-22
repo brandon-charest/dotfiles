@@ -51,3 +51,6 @@ alias obs='~/Obsidian/Obsidian-0.12.12.AppImage'
 # Change Shells
 alias tobash="sudo chsh $USER -s /bin/bash && echo 'Logout to take effect.'"
 alias tozsh="sudo chsh $USER -s /bin/zsh && echo 'Logout to take effect.'"
+
+alias school="cd ~/Documents/Github/NEU-Courses/"
+alias blog="cd ~/Documents/Github/personal-blogV2/"

@@ -36,6 +36,6 @@ lvim.plugins = {
   ------------------------
   -- Colorschemes
   ------------------------
-    "gruvbox-community/gruvbox", 
+    "gruvbox-community/gruvbox",
     "sainnhe/gruvbox-material",
 }
