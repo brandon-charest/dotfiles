@@ -6,7 +6,7 @@ This repo contains my personal dotfiles, which will probably change and update c
 ## Neovim / NVChad / LunarVim
 I am currently jumping between [NVChad](https://nvchad.com/) and [LunarVim](https://www.lunarvim.org/). I am using MVChad as a jumping off point along with LunarVim while I slowly being to build my own custom config.
 
-## [Hyprland](https://hyprland.org/)
+## [Hyprland](https://hyprland.org/) (Nvidia)
 Hyprland config based off of [JaKooLit](https://github.comhttps://github.com/SolDoesTech/JaKooLit) and [SolDoesTech](https://github.com/SolDoesTech)
 
 ### Components:
