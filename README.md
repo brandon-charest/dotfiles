@@ -4,13 +4,7 @@ This repo contains my personal dotfiles, which will probably change and update c
 **Warning**: Be sure to backup your own dotfiles before replacing them. 
 
 ## Neovim / LunarVim
-I am currently jumping between [LunarVim](https://github.com/LunarVim/LunarVim) and [Neovim](https://github.com/neovim/neovim). I am using LunarVim as a jumping off point while I slowly build up my own config over in Neovim.
-
-
-### Java
-LSP: [nvim-jdtls](https://github.com/mfussenegger/nvim-jdtls) 
-
-Debugging: [java-debug](https://github.com/microsoft/java-debug) & [vscode-java-test](https://github.com/microsoft/vscode-java-test)
+I am currently jumping between [NVChad](https://nvchad.com/) and [LunarVim](https://www.lunarvim.org/). I am using MVChad as a jumping off point along with LunarVim while I slowly being to build my own custom config.
 
 ## Todo:
 
