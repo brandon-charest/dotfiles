@@ -14,6 +14,8 @@ Hyprland config based off of [JaKooLit](https://github.comhttps://github.com/Sol
 - Main Component: [`Hyprland`](https://github.com/hyprwm/Hyprland)
  
 - Terminal: [`Kitty`](https://sw.kovidgoyal.net/kitty/)
+
+- Shell: [`Zsh`](https://ohmyz.sh/)
  
 - Status bar: [`Waybar`](https://github.com/Alexays/Waybar)
  
