@@ -38,4 +38,5 @@ lvim.plugins = {
   ------------------------
     "gruvbox-community/gruvbox",
     "sainnhe/gruvbox-material",
+    "catppuccin/nvim",
 }
