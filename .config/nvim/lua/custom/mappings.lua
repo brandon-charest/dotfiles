@@ -2,8 +2,11 @@ local M = {}
 local term_opts = { silent = true }
 M.general = {
   n = {
+    ["<C-d>"] = { "<C-d>zz"},
+    ["<C-u>"] = { "<C-u>zz"},
     ["<S-l>"] = { ":bnext<CR>", "Next Buffer"},
     ["<S-h>"] = { ":bprevious<CR>", "Previous Buffer"},
+    ["<leader>h"] = {"<cmd>:noh<CR>", "Disable Highlight"}
   },
   i = {
     ["<C-s>"] = {"<esc><cmd> w <CR>", "Save file" },
