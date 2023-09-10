@@ -1,5 +1,13 @@
 local plugins = {
   {
+    "p00f/nvim-ts-rainbow",
+    event = "VeryLazy",
+  },
+  {
+    "windwp/nvim-autopairs",
+    event = "VeryLazy",
+  },
+  {
     "mhartington/formatter.nvim",
     event = "VeryLazy",
     opts = function ()
@@ -58,6 +66,13 @@ local plugins = {
     end,
   },
  {
+    "nvim-treesitter/nvim-treesitter",
+    config = function ()
+      require "plugins.configs.treesitter"
+      require "custom.configs.treesitter"
+    end,
+  },
+ {
     "neovim/nvim-lspconfig",
     config = function ()
       require "plugins.configs.lspconfig"
@@ -77,7 +92,10 @@ local plugins = {
         "typescript-language-server",
         "eslint-lsp",
         "prettier",
-        "js-debug-adapter"
+        "js-debug-adapter",
+        "html-ls",
+        "css-ls",
+        "markdown"
       },
     },
   },

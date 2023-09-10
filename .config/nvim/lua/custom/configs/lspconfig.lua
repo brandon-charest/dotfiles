@@ -49,5 +49,15 @@ lspconfig.tsserver.setup({
       organize_imports,
       description = "Organize Imports",
     }
-  }
+  },
+})
+
+lspconfig.astro.setup({
+  on_attach = on_attach,
+  capabilities = capabilities,
+  filetypes = {"astro"},
+  init_options = {
+    typescript = {},
+  },
+  root_dir = util.root_pattern("package.json", "tsconfig.json", "jsconfig.json", ".git")
 })

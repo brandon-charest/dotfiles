@@ -1,0 +1,15 @@
+-- local opts = {
+--   ensure_installed = {
+--     "vim",
+--     "html",
+--     "css",
+--     "javascript",
+--     "typescript",
+--     "json",
+--     "astro",
+--   },
+--   autotag = {
+--     enable = true,
+--   }
+-- }
+-- return opts
